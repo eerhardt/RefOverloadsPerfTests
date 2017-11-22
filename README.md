@@ -15,9 +15,10 @@ In order to use the new `ref` overloads on the System.Numerics types, you need t
 
 1. git checkout https://github.com/eerhardt/corefx/tree/RefOverloads
 2. build -release
-3. Copy the built `corefx/bin/AnyOS.AnyCPU.Release/System.Numerics.Vectors/netcoreapp/System.Numerics.Vectors.dll` to `WHERE_YOU_INSTALLED_DOTNET/shared/Microsoft.NETCore.App/2.1.0-version/`
-4. Copy the built `corefx/bin/ref/System.Numerics.Vectors/4.1.4.0/netcoreapp/System.Numerics.Vectors.dll` to `NUGET_PACKAGES_ROOT/packages/microsoft.netcore.app/2.1.0-version/ref/netcoreapp2.1/`.
+3. Copy the built `corefx/bin/AnyOS.AnyCPU.Release/System.Numerics.Vectors/netcoreapp/System.Numerics.Vectors.dll` to `WHERE_YOU_INSTALLED_DOTNET/shared/Microsoft.NETCore.App/2.1.0-preview1-version/`
+4. Copy the built `corefx/bin/ref/System.Numerics.Vectors/4.1.4.0/netcoreapp/System.Numerics.Vectors.dll` to `NUGET_PACKAGES_ROOT/packages/microsoft.netcore.app/2.1.0-preview1-version/ref/netcoreapp2.1/`.
  - `NUGET_PACKAGES_ROOT` is typically `C:\Users\USER\.nuget\` on Windows or `~/.nuget/` on non-Windows.
+ - Ensure you are using the same `2.1.0-preview1-version` for steps 3 and 4.
 
  `$ dotnet run -c Release`
 
